@@ -1,0 +1,63 @@
+:root {
+  --cinza: #aaa;
+  --vermelha: #e93d50;
+  --vermelha-escura: #af303f;
+  --branca: #fff;
+}
+
+body {
+  align-items: center;
+  background-image: url(../BG_1.jpg);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Tangerine';
+  min-height: 100vh;
+}
+
+h1 {
+  color: var(--branca);
+  margin-bottom: 20px;
+  font-size: 3.5rem;
+}
+
+h1 strong{
+  font-family: 'Road Rage';
+  font-size: 4rem;
+  margin-right: 10px;
+}
+
+.teclado {
+  background: #4f4f4f;
+  box-shadow: 6px 8px 0 6px #2f2f2f, 10px 10px 10px;
+  border-radius: 30px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+}
+
+.tecla {
+  background-color: var(--branca);
+  border-radius: 30px;
+  color: var(--vermelha-escura);
+  cursor: pointer;
+  height: 120px;
+  font-family: 'Pathway Gothic One';
+  font-size: 2.5em;
+  font-weight: bold;
+  line-height: 120px;
+  text-align: center;
+  width: 120px;
+  transition: 0.4s;
+}
+
+.tecla:hover{
+  transform: scale(1.05);
+  box-shadow: 4px 4px 4px #1f1f1f;
+}
+
+.tecla:active{
+  color: white;
+  background-color: var(--vermelha-escura);   
+}
